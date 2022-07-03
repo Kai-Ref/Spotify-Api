@@ -8,9 +8,13 @@ import base64
 import matplotlib.pyplot as plt
 from spotipy.oauth2 import SpotifyClientCredentials
 from dotenv import load_dotenv
+from pathlib import Path
 
+
+
+#dotenv_path=Path('~\SpotifyClientCredentials.env')
 load_dotenv()
-
+print('frefefe'+os.getcwd())
 CLIENT_ID = os.getenv('SPOTIPY_CLIENT_ID')
 CLIENT_SECRET = os.getenv('SPOTIPY_CLIENT_SECRET')
 BASE_URL = 'https://api.spotify.com/v1/'
